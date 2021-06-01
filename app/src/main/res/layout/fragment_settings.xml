@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_header_settings"
+            style="@style/SectionHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textColor="@color/black" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_header_settings"
+            android:text="DND Mode"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+        <TextView
+            android:id="@+id/tv_dnd"
+            android:layout_below="@id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="When Do Not Disturb is turned on, it sends incoming calls to voicemail and does not alert you about calls or text messages. It also silences all notifications, so you're not disturbed by the phone."/>
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_dnd"
+            android:text="Storage Permission"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+        <TextView
+            android:id="@+id/tv_storage_permit"
+            android:layout_below="@id/switch2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Give our app storage permission so you can configure your app using your local file"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
